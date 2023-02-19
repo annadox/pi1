@@ -116,6 +116,7 @@ class HierarchicalClusteringTest(ClusterCompare):
         dist = manhattan_dist([4,2,3], [1,3,5])
         self.assertAlmostEqual(dist, 3+1+2)
         dist = manhattan_dist(DATA["Polona"], DATA["Rajko"])
+        print(dist)
         self.assertAlmostEqual(dist, 453.0, places=2)
 
     def test_single_linkage(self):
